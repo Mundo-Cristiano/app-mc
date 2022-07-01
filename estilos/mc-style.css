@@ -92,13 +92,13 @@ body {
 	overflow-y: scroll;
 	background: rgba(0,0,0,0.8);
 	z-index:2;
-	transition:all 250ms ease-in-out;
+	transition:all 500ms ease-in-out;
 }
 .player .player-list .toggle-list {
 	position: sticky;
-	top:0px;
+	top:-1px;
 	text-align: center;
-	height: 20px;
+	height: 25px;
 	line-height: 20px;
 	background: #58006e;
 }
