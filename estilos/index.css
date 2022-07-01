@@ -7,13 +7,6 @@
     display: grid;
     gap: 1.5vw;
     grid-template-columns: repeat(auto-fill, minmax(38vw, 1fr));
-
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 98%;
-    transform: translate(-50%, -50%);
 }
 
 body {
@@ -62,6 +55,19 @@ ul {
     position: relative;
     display: inline-block;
     text-align: center;
+}
+
+/*Orientacion Vertical*/
+
+@media screen and (max-width: 711px) and (orientation: portrait) {
+
+    .grid-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 98%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 /*Orientacion Horizontal*/
