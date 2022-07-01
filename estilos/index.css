@@ -59,7 +59,7 @@ ul {
 
 /*Orientacion Vertical*/
 
-@media screen and (max-width: 711px) and (orientation: portrait) {
+@media screen and (orientation: portrait) {
 
     .grid-container {
         position: absolute;
