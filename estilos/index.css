@@ -3,11 +3,17 @@
     margin: 0;
 }
 
-
 .grid-container {
     display: grid;
     gap: 1.5vw;
     grid-template-columns: repeat(auto-fill, minmax(38vw, 1fr));
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 98%;
+    transform: translate(-50%, -50%);
 }
 
 body {
@@ -17,8 +23,6 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	justify-content: center;
-	align-items: center;
     margin: 1.5vw;
 }
 
@@ -46,38 +50,18 @@ ul {
     padding: 2vw;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+    
 }
 
 .iconos {
     border-radius: 1vw;
     width: 100%;
-    z-index: -1;
-}
-
-.iconos-2 {
-    border-radius: 1vw;
-    width: 50%;
-    z-index: -1;
 }
 
 .contenedor-imagen-y-texto{
     position: relative;
     display: inline-block;
     text-align: center;
-}
- 
-
-.texto-central{
-    position: absolute;
-    width: 100%;
-    font-size: 3vw;
-    font-family: tahoma;
-    padding: 0.5vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
 }
 
 /*Orientacion Horizontal*/
@@ -92,11 +76,6 @@ ul {
     ul {
         padding: 1.5vw;
     }
-
-    .texto-central {
-        font-size: 1.5vw;
-        padding: 0.3vw;
-    }
 }
 
 /*Medias Queries Tablets*/
@@ -109,11 +88,6 @@ ul {
         gap: 1vw;
         grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr));
     }
-
-    .texto-central {
-        font-size: 1.7vw;
-        padding: 0.3vw;
-    }
 }
 
 /*Orientacion Horizontal*/
@@ -123,10 +97,5 @@ ul {
     .grid-container {
         gap: 1vw;
         grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
-    }
-
-    .texto-central {
-        font-size: 1.5vw;
-        padding: 0.2vw;
     }
 }
